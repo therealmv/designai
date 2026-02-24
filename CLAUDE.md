@@ -2,26 +2,30 @@
 
 This file provides guidance to AI assistants (Claude and others) working on the **DesignAI** repository.
 
+_Last updated: 2026-02-24_
+
 ---
 
 ## Project Overview
 
-**DesignAI** is a repository currently in its initial state. As the project evolves, this file should be kept up to date with the actual architecture, conventions, and workflows in use.
+**DesignAI** is a repository currently in its initial state — no tech stack, runtime, or source code has been added yet. As the project evolves, this file must be kept up to date with the actual architecture, conventions, and workflows in use.
 
 - **Repository:** `therealmv/designai`
 - **Active branch pattern:** `claude/<task-id>`
+- **Default branch:** `master`
 
 ---
 
 ## Repository Structure
 
-> Update this section as files are added.
+The repository is at its starting point. The only file present is this guidance document.
 
 ```
 designai/
-├── CLAUDE.md          # This file — guidance for AI assistants
-└── (project files to be added)
+└── CLAUDE.md          # This file — guidance for AI assistants
 ```
+
+> Update this section whenever files or directories are added.
 
 ---
 
@@ -29,8 +33,9 @@ designai/
 
 ### Branching Strategy
 
-- Work is done on feature branches following the pattern `claude/<task-id>`.
-- Never push directly to `main` or `master` without explicit permission.
+- All work is done on feature branches following the pattern `claude/<task-id>`.
+- Example: `claude/claude-md-mm0s5e6ozny0c5y6-O1Kdq`
+- Never push directly to `master` without explicit permission.
 - Always create a branch locally if it does not exist before pushing.
 
 ### Commit Conventions
@@ -70,7 +75,7 @@ git push -u origin <branch-name>
 ### Installation
 
 ```bash
-# Example — replace once project tech stack is confirmed
+# Replace once project tech stack is confirmed
 npm install
 ```
 
@@ -131,11 +136,11 @@ npm test
 
 ## Key Files & Directories
 
-> Populate as the project grows.
-
 | Path | Purpose |
 |------|---------|
 | `CLAUDE.md` | AI assistant guidance (this file) |
+
+> Add rows here as the project grows.
 
 ---
 
